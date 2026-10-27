@@ -1,9 +1,11 @@
-// Standalone source publication: legacy test files are opt-in and never part of main output.
+// Test-only classes keep their original source paths, but do not enter main output.
+def isolatedNativeTests = ['thaumichorizons/AlchemyGameTests.java', 'thaumichorizons/BoatGameTests.java', 'thaumichorizons/ClientSmoke.java', 'thaumichorizons/CloudGameTests.java', 'thaumichorizons/DeviceGameTests.java', 'thaumichorizons/GatewayGameTests.java', 'thaumichorizons/GolemGameTests.java', 'thaumichorizons/HorizonsGameTests.java', 'thaumichorizons/InjectorGameTests.java', 'thaumichorizons/LensGameTests.java', 'thaumichorizons/LightningGameTests.java', 'thaumichorizons/MaterialGameTests.java', 'thaumichorizons/MirrorAmuletGameTests.java', 'thaumichorizons/PocketTerrainGameTests.java', 'thaumichorizons/PocketTestDimension.java', 'thaumichorizons/PocketWorldGameTests.java', 'thaumichorizons/RareCreatureGameTests.java', 'thaumichorizons/RecombinatorGameTests.java', 'thaumichorizons/RegressionGameTests.java', 'thaumichorizons/RegressionSmoke.java', 'thaumichorizons/RiftGameTests.java', 'thaumichorizons/SoulGameTests.java', 'thaumichorizons/SpeciesGameTests.java', 'thaumichorizons/SpikeGameTests.java', 'thaumichorizons/SyntheticNodeGameTests.java', 'thaumichorizons/VatGameTests.java']
 sourceSets {
-    main { java.exclude '**/*Tests.java' }
+    main { java.exclude isolatedNativeTests }
     gameTest {
         java.setSrcDirs(['src/main/java', 'src/gametest/java'])
-        java.include '**/*Tests.java', 'thaumcraft/test/TestSupport.java'
+        java.include isolatedNativeTests
+        java.include 'thaumcraft/test/TestSupport.java'
         resources.setSrcDirs(['src/main/resources', 'src/gametest/resources'])
         resources.include 'data/**/structure/test/**'
         compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
@@ -13,7 +15,9 @@ sourceSets {
 configurations.gameTestImplementation.extendsFrom(configurations.implementation)
 configurations.gameTestCompileOnly.extendsFrom(configurations.compileOnly)
 configurations.gameTestRuntimeOnly.extendsFrom(configurations.runtimeOnly)
-if (gradle.startParameter.taskNames.any { it.toLowerCase().contains('gametest') }) {
+def enableNativeTests = gradle.startParameter.taskNames.any { it.toLowerCase().contains('gametest') } || providers.gradleProperty('includeGameTests').isPresent()
+if (enableNativeTests) {
     neoForge.mods.getByName('thaumichorizons').sourceSet(sourceSets.gameTest)
     neoForge.runs.getByName('gameTestServer').sourceSet = sourceSets.gameTest
+    if (providers.gradleProperty('includeGameTests').isPresent()) neoForge.runs.getByName('client').sourceSet = sourceSets.gameTest
 }
