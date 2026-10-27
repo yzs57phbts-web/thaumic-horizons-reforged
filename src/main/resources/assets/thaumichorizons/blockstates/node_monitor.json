@@ -1,0 +1,40 @@
+{
+  "variants": {
+    "facing=down,active=false": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=down,active=true": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=up,active=false": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=up,active=true": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=north,active=false": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=north,active=true": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=south,active=false": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=south,active=true": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=west,active=false": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=west,active=true": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=east,active=false": {
+      "model": "thaumichorizons:block/node_monitor"
+    },
+    "facing=east,active=true": {
+      "model": "thaumichorizons:block/node_monitor"
+    }
+  }
+}

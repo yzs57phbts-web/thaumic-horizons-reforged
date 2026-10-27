@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "axis=x,returning=true,side=0": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=true,side=1": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=true,side=2": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=true,side=3": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=false,side=0": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=false,side=1": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=false,side=2": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=x,returning=false,side=3": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=true,side=0": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=true,side=1": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=true,side=2": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=true,side=3": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=false,side=0": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=false,side=1": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=false,side=2": {
+      "model": "thaumichorizons:block/gateway_portal"
+    },
+    "axis=z,returning=false,side=3": {
+      "model": "thaumichorizons:block/gateway_portal"
+    }
+  }
+}

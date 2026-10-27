@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": {
+    "item": "thaumichorizons:meat"
+  },
+  "result": {
+    "id": "thaumichorizons:cooked_meat"
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

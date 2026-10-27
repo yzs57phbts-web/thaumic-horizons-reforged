@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "thaumichorizons:block/tooth_spike"
+    },
+    "facing=down": {
+      "model": "thaumichorizons:block/tooth_spike"
+    },
+    "facing=north": {
+      "model": "thaumichorizons:block/tooth_spike"
+    },
+    "facing=south": {
+      "model": "thaumichorizons:block/tooth_spike"
+    },
+    "facing=east": {
+      "model": "thaumichorizons:block/tooth_spike"
+    },
+    "facing=west": {
+      "model": "thaumichorizons:block/tooth_spike"
+    }
+  }
+}

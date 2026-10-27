@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/crossbow",
+  "textures": {
+    "layer0": "thaumichorizons:items/injector_pulling_2"
+  },
+  "overrides": []
+}

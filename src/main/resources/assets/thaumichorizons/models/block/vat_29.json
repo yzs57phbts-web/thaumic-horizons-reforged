@@ -1,0 +1,82 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "thaumichorizons:blocks/vatbasesidecenter",
+    "up": "thaumcraft:block/planks_greatwood",
+    "down": "thaumichorizons:blocks/vatinnercornerc",
+    "north": "thaumichorizons:blocks/vatlidleftright",
+    "south": "thaumichorizons:blocks/vatlidleftright",
+    "west": "thaumichorizons:blocks/vatlidleftright",
+    "east": "thaumichorizons:blocks/vatlidleftright"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#up",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#down",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "north": {
+          "texture": "#north",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#south",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#west",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#east",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

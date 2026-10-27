@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    },
+    {
+      "item": "thaumichorizons:chocolate_bar"
+    }
+  ],
+  "result": {
+    "id": "thaumichorizons:chocolate",
+    "count": 1
+  }
+}

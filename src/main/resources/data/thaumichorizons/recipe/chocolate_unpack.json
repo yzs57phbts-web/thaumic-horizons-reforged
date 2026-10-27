@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "thaumichorizons:chocolate"
+    }
+  ],
+  "result": {
+    "id": "thaumichorizons:chocolate_bar",
+    "count": 9
+  }
+}

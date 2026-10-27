@@ -1,0 +1,292 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "cell": "0"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_0"
+      }
+    },
+    {
+      "when": {
+        "cell": "1"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_1"
+      }
+    },
+    {
+      "when": {
+        "cell": "2"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_2"
+      }
+    },
+    {
+      "when": {
+        "cell": "3"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_3"
+      }
+    },
+    {
+      "when": {
+        "cell": "4"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_4"
+      }
+    },
+    {
+      "when": {
+        "cell": "5"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_5"
+      }
+    },
+    {
+      "when": {
+        "cell": "6"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_6"
+      }
+    },
+    {
+      "when": {
+        "cell": "7"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_7"
+      }
+    },
+    {
+      "when": {
+        "cell": "8"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_8"
+      }
+    },
+    {
+      "when": {
+        "cell": "9"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_9"
+      }
+    },
+    {
+      "when": {
+        "cell": "10"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_10"
+      }
+    },
+    {
+      "when": {
+        "cell": "11"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_11"
+      }
+    },
+    {
+      "when": {
+        "cell": "12"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_12"
+      }
+    },
+    {
+      "when": {
+        "cell": "13"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_13"
+      }
+    },
+    {
+      "when": {
+        "cell": "14"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_14"
+      }
+    },
+    {
+      "when": {
+        "cell": "15"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_15"
+      }
+    },
+    {
+      "when": {
+        "cell": "16"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_16"
+      }
+    },
+    {
+      "when": {
+        "cell": "17"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_17"
+      }
+    },
+    {
+      "when": {
+        "cell": "18"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_18"
+      }
+    },
+    {
+      "when": {
+        "cell": "19"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_19"
+      }
+    },
+    {
+      "when": {
+        "cell": "20"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_20"
+      }
+    },
+    {
+      "when": {
+        "cell": "21"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_21"
+      }
+    },
+    {
+      "when": {
+        "cell": "22"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_22"
+      }
+    },
+    {
+      "when": {
+        "cell": "23"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_23"
+      }
+    },
+    {
+      "when": {
+        "cell": "24"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_24"
+      }
+    },
+    {
+      "when": {
+        "cell": "25"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_25"
+      }
+    },
+    {
+      "when": {
+        "cell": "26"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_26"
+      }
+    },
+    {
+      "when": {
+        "cell": "27"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_27"
+      }
+    },
+    {
+      "when": {
+        "cell": "28"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_28"
+      }
+    },
+    {
+      "when": {
+        "cell": "29"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_29"
+      }
+    },
+    {
+      "when": {
+        "cell": "30"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_30"
+      }
+    },
+    {
+      "when": {
+        "cell": "31"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_31"
+      }
+    },
+    {
+      "when": {
+        "cell": "32"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_32"
+      }
+    },
+    {
+      "when": {
+        "cell": "33"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_33"
+      }
+    },
+    {
+      "when": {
+        "cell": "34"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_34"
+      }
+    },
+    {
+      "when": {
+        "cell": "35"
+      },
+      "apply": {
+        "model": "thaumichorizons:block/vat_35"
+      }
+    }
+  ]
+}

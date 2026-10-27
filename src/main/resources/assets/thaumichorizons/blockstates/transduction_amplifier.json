@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "thaumichorizons:block/transduction_amplifier"
+    },
+    "facing=down": {
+      "model": "thaumichorizons:block/transduction_amplifier"
+    },
+    "facing=north": {
+      "model": "thaumichorizons:block/transduction_amplifier"
+    },
+    "facing=south": {
+      "model": "thaumichorizons:block/transduction_amplifier"
+    },
+    "facing=east": {
+      "model": "thaumichorizons:block/transduction_amplifier"
+    },
+    "facing=west": {
+      "model": "thaumichorizons:block/transduction_amplifier"
+    }
+  }
+}

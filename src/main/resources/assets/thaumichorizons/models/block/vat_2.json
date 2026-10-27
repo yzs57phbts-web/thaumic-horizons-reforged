@@ -1,0 +1,82 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "thaumichorizons:blocks/vatbasesidecenter",
+    "up": "thaumichorizons:blocks/vatinnercornerc",
+    "down": "thaumichorizons:blocks/vatbasecenter",
+    "north": "thaumichorizons:blocks/vatbaseleftright",
+    "south": "thaumichorizons:blocks/vatbaseleftright",
+    "west": "thaumichorizons:blocks/vatbaseleftright",
+    "east": "thaumichorizons:blocks/vatbaseleftright"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#up",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "down": {
+          "texture": "#down",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "north": {
+          "texture": "#north",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#south",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#west",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#east",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}

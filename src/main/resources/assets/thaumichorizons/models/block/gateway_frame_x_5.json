@@ -1,0 +1,55 @@
+{
+  "textures": {
+    "stone": "thaumcraft:block/es_1",
+    "lapis": "thaumichorizons:blocks/legacy_lapis_block",
+    "TR": "thaumichorizons:blocks/gateway_topright",
+    "TL": "thaumichorizons:blocks/gateway_topleft",
+    "BR": "thaumichorizons:blocks/gateway_bottomright",
+    "BL": "thaumichorizons:blocks/gateway_bottomleft",
+    "topR": "thaumichorizons:blocks/gateway_top2",
+    "topL": "thaumichorizons:blocks/gateway_top",
+    "R": "thaumichorizons:blocks/gateway_right",
+    "L": "thaumichorizons:blocks/gateway_left",
+    "B": "thaumichorizons:blocks/gateway_bottom"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#lapis",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#stone",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#topR",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#topL",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#stone",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#stone",
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}

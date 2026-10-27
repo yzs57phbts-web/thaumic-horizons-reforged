@@ -1,0 +1,31 @@
+Upstream: https://github.com/GTNewHorizons/ThaumicHorizons
+Commit: 5a6b05f13c5af07b5592d2e633e3e73859ad2f23
+Original: Copyright (c) 2015 Kentington
+License: LGPL-3.0-or-later
+This is a modified Minecraft 1.21.1 NeoForge port of the registered gameplay content.
+Modern-engine adaptations and source coverage are described in PORTING-STATUS.md.
+Resource files are copied byte-for-byte; paths are lowercased for ResourceLocation compatibility.
+Nine gateway textures are restored from the classic 1.1.9 release (CurseForge file
+2265882) instead of the modified GTNH versions. All 274 shared PNG rasters match
+the classic release exactly in dimensions and RGBA pixels. See
+audit/classic-1.1.9-pixels.json for provenance and the original archive SHA-256.
+
+Legacy horse geometry/animation and six vanilla cat/undead-horse textures:
+Minecraft Java Edition 1.7.10, Mojang. Official client download metadata is recorded
+in audit/legacy-horse-model.json. Named using MCP stable_12 (1.7.10).
+The original Minecraft client archive is a local reference and is not redistributed.
+Additional texture hashes/credits: audit/legacy-cat-textures.json.
+
+Injector appearance is an explicit user-requested palette substitution on vanilla
+Minecraft Java 1.21.1 crossbow PNGs, credited to Mojang. Alpha and pixel positions
+are unchanged. The bow-limb and stock colors come from the original Thaumcraft
+bone bow and thaumium-tool palettes. See audit/injector-palette.json.
+
+The bundled Thaumcraft compatibility source snapshot is separate from the shared
+Thaumcraft project. Version: 1.1-bbtt.15-horizons.1. Source is supplied alongside
+the binary; hooks cover addon wands, golem stats/rendering, furnace bonuses and
+formatted research text. Its original author/license files are retained.
+
+Original legacy noise algorithms and vanilla gateway/cod texture attribution:
+audit/pocket-generation.json, audit/legacy-gateway-textures.json,
+audit/legacy-infusion-icon.json. The reference Minecraft client is not bundled.

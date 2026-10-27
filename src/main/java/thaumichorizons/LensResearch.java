@@ -1,0 +1,16 @@
+package thaumichorizons;
+import thaumcraft.aspect.*;
+import thaumcraft.crafting.*;
+import thaumcraft.research.*;
+final class LensResearch {
+    static void register(){
+        lens("fire","Fire",new AspectList().add(Aspect.SENSES,3).add(Aspect.LIGHT,3).add(Aspect.ENERGY,2),new AspectList().add(Aspect.LIGHT,20).add(Aspect.ENERGY,12).add(Aspect.SENSES,20),2,-2,2,new String[]{"GOGGLES","INFUSION"},"minecraft:golden_carrot","thaumcraft:fire_shard","minecraft:golden_carrot","thaumcraft:fire_shard");
+        lens("water","Water",new AspectList().add(Aspect.SENSES,4).add(Aspect.EXCHANGE,2),new AspectList().add(Aspect.SENSES,24).add(Aspect.EXCHANGE,12).add(Aspect.WATER,12),1,-4,1,new String[]{"lensFire","ARCANEEAR"},"thaumcraft:arcane_ear","thaumcraft:water_shard","minecraft:note_block","thaumcraft:water_shard");
+        lens("earth","Earth",new AspectList().add(Aspect.SENSES,4).add(Aspect.VOID,2).add(Aspect.LIGHT,2),new AspectList().add(Aspect.SENSES,20).add(Aspect.VOID,12).add(Aspect.LIGHT,12),3,-4,1,new String[]{"lensFire"},"minecraft:glowstone_dust","thaumcraft:earth_shard","minecraft:ender_eye","thaumcraft:earth_shard");
+        lens("air","Air",new AspectList().add(Aspect.SENSES,4).add(Aspect.AURA,2).add(Aspect.LIFE,2).add(Aspect.UNDEAD,2),new AspectList().add(Aspect.SENSES,18).add(Aspect.AURA,4).add(Aspect.LIFE,12).add(Aspect.UNDEAD,12),-1,-4,1,new String[]{"lensFire"},"minecraft:bone","thaumcraft:air_shard","minecraft:egg","thaumcraft:air_shard");
+        lens("order_entropy","OrderEntropy",new AspectList().add(Aspect.SENSES,4).add(Aspect.MIND,4).add(Aspect.MAGIC,2),new AspectList().add(Aspect.SENSES,24).add(Aspect.MIND,12).add(Aspect.MAGIC,12),5,-4,1,new String[]{"lensFire"},"thaumcraft:scribing_tools","thaumcraft:entropy_shard","minecraft:book","thaumcraft:order_shard");
+        MagicData.arcane("recipeLensCase","lensCase",TcStack.of("thaumichorizons:lens_case",1),new AspectList().add(Aspect.EARTH,10).add(Aspect.ORDER,10).add(Aspect.ENTROPY,10),new String[]{"LGL","LBL","LLL"},'L',TcIngredient.item("minecraft:leather"),'G',TcIngredient.item("minecraft:iron_ingot"),'B',TcIngredient.item("thaumcraft:mundane_belt"));
+        new ResearchItem("lensCase","ThaumicHorizons",new AspectList().add(Aspect.CRYSTAL,2).add(Aspect.CLOTH,4).add(Aspect.VOID,2),2,-6,1,TcStack.of("thaumichorizons:lens_case",1)).setSecondary().setParents("lensAir","lensWater","lensEarth","lensOrderEntropy","FOCUSPOUCH").setConcealed().setPages(ResearchPage.text("lensCase1"),ResearchPage.arcane("TH:recipeLensCase")).registerResearchItem();
+    }
+    private static void lens(String type,String name,AspectList researchAspects,AspectList recipeAspects,int x,int y,int complexity,String[] parents,String... components){String research="lens"+name,recipe="TH:recipeLens"+name;var result=TcStack.of("thaumichorizons:lens_"+type,1);TcRecipes.register(new InfusionRecipe(recipe,research,result,1,recipeAspects,TcIngredient.item("minecraft:glass_pane"),java.util.Arrays.stream(components).map(TcIngredient::item).toList()));var entry=new ResearchItem(research,"ThaumicHorizons",researchAspects,x,y,complexity,result).setParents(parents).setPages(ResearchPage.text(research+"1"),ResearchPage.infusion(recipe));if(!type.equals("fire"))entry.setConcealed();entry.registerResearchItem();}
+}

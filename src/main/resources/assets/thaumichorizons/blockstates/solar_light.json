@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "color=0": {
+      "model": "minecraft:block/air"
+    },
+    "color=1": {
+      "model": "minecraft:block/air"
+    },
+    "color=2": {
+      "model": "minecraft:block/air"
+    },
+    "color=3": {
+      "model": "minecraft:block/air"
+    },
+    "color=4": {
+      "model": "minecraft:block/air"
+    },
+    "color=5": {
+      "model": "minecraft:block/air"
+    },
+    "color=6": {
+      "model": "minecraft:block/air"
+    },
+    "color=7": {
+      "model": "minecraft:block/air"
+    },
+    "color=8": {
+      "model": "minecraft:block/air"
+    },
+    "color=9": {
+      "model": "minecraft:block/air"
+    },
+    "color=10": {
+      "model": "minecraft:block/air"
+    },
+    "color=11": {
+      "model": "minecraft:block/air"
+    },
+    "color=12": {
+      "model": "minecraft:block/air"
+    },
+    "color=13": {
+      "model": "minecraft:block/air"
+    },
+    "color=14": {
+      "model": "minecraft:block/air"
+    },
+    "color=15": {
+      "model": "minecraft:block/air"
+    }
+  }
+}

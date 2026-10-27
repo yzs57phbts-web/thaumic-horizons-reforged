@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "unstable=true": {
+      "model": "thaumichorizons:block/alchemite"
+    },
+    "unstable=false": {
+      "model": "thaumichorizons:block/alchemite"
+    }
+  }
+}

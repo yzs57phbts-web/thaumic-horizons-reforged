@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "thaumichorizons:block/metal_spike"
+    },
+    "facing=down": {
+      "model": "thaumichorizons:block/metal_spike"
+    },
+    "facing=north": {
+      "model": "thaumichorizons:block/metal_spike"
+    },
+    "facing=south": {
+      "model": "thaumichorizons:block/metal_spike"
+    },
+    "facing=east": {
+      "model": "thaumichorizons:block/metal_spike"
+    },
+    "facing=west": {
+      "model": "thaumichorizons:block/metal_spike"
+    }
+  }
+}

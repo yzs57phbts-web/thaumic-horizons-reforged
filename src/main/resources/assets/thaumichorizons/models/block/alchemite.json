@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "thaumichorizons:blocks/alchemite_side",
+    "top": "thaumichorizons:blocks/alchemite_top",
+    "bottom": "thaumichorizons:blocks/alchemite_bottom"
+  }
+}

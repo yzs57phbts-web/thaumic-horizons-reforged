@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "thaumichorizons:block/vortex_stabilizer"
+    },
+    "facing=down": {
+      "model": "thaumichorizons:block/vortex_stabilizer"
+    },
+    "facing=north": {
+      "model": "thaumichorizons:block/vortex_stabilizer"
+    },
+    "facing=south": {
+      "model": "thaumichorizons:block/vortex_stabilizer"
+    },
+    "facing=east": {
+      "model": "thaumichorizons:block/vortex_stabilizer"
+    },
+    "facing=west": {
+      "model": "thaumichorizons:block/vortex_stabilizer"
+    }
+  }
+}

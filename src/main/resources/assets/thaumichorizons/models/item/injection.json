@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumichorizons:items/injection_body",
+    "layer1": "thaumichorizons:items/injection_liquid"
+  }
+}

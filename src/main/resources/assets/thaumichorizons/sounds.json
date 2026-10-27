@@ -1,0 +1,10 @@
+{
+  "vortex": {
+    "sounds": [
+      {
+        "name": "thaumichorizons:vortex",
+        "stream": true
+      }
+    ]
+  }
+}

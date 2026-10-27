@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="LGPL-3.0-or-later"
+[[mods]]
+modId="thaumichorizons"
+version="${version}"
+displayName="Thaumic Horizons: Reforged"
+authors="TheKentington, GTNewHorizons contributors; local 1.21.1 port"
+description="Thaumic Horizons for Minecraft 1.21.1: alchemy, soul machines, cloning, all forty vat infusion recipes, transformed creatures, injector, lenses, golems, boats, synthetic nodes, rifts, pocket planes and gateways. See META-INF/PORTING-STATUS.md for parity, modern-engine adaptations and the required bundled Thaumcraft compatibility build."
+[[dependencies.thaumichorizons]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.256,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.thaumichorizons]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.thaumichorizons]]
+modId="thaumcraft"
+type="required"
+versionRange="[1.1-bbtt.18,)"
+ordering="AFTER"
+side="BOTH"

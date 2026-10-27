@@ -1,0 +1,104 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumichorizons:items/focus_illumination.0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 0
+      },
+      "model": "thaumichorizons:item/focus_illumination_0"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 1
+      },
+      "model": "thaumichorizons:item/focus_illumination_1"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 2
+      },
+      "model": "thaumichorizons:item/focus_illumination_2"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 3
+      },
+      "model": "thaumichorizons:item/focus_illumination_3"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 4
+      },
+      "model": "thaumichorizons:item/focus_illumination_4"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 5
+      },
+      "model": "thaumichorizons:item/focus_illumination_5"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 6
+      },
+      "model": "thaumichorizons:item/focus_illumination_6"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 7
+      },
+      "model": "thaumichorizons:item/focus_illumination_7"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 8
+      },
+      "model": "thaumichorizons:item/focus_illumination_8"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 9
+      },
+      "model": "thaumichorizons:item/focus_illumination_9"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 10
+      },
+      "model": "thaumichorizons:item/focus_illumination_10"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 11
+      },
+      "model": "thaumichorizons:item/focus_illumination_11"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 12
+      },
+      "model": "thaumichorizons:item/focus_illumination_12"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 13
+      },
+      "model": "thaumichorizons:item/focus_illumination_13"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 14
+      },
+      "model": "thaumichorizons:item/focus_illumination_14"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:illumination_color": 15
+      },
+      "model": "thaumichorizons:item/focus_illumination_15"
+    }
+  ]
+}

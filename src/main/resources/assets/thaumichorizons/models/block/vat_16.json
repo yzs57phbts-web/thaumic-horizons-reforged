@@ -1,0 +1,59 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "thaumichorizons:blocks/vatbasesidecenter",
+    "south": "thaumichorizons:blocks/vatbottom",
+    "water": "minecraft:block/water_still"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "south": {
+          "texture": "#south",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        12
+      ],
+      "faces": {
+        "south": {
+          "texture": "#water",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "tintindex": 0
+        }
+      },
+      "shade": false
+    }
+  ],
+  "render_type": "minecraft:translucent"
+}

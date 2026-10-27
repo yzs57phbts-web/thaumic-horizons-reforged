@@ -1,0 +1,66 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/bloodinfuser"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/dynamobase"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/dynamoessentiabase"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:items/syringeempty"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:items/syringeblood"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:items/syringe"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:items/phialblood"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:items/eggincubated"
+    },
+    {
+      "type": "minecraft:directory",
+      "source": "blocks",
+      "prefix": "blocks/"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/soulbeacon",
+      "sprite": "thaumichorizons:models/soulbeacon"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumcraft:model/infuser",
+      "sprite": "thaumcraft:model/infuser"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/soulsieve",
+      "sprite": "thaumichorizons:models/soulsieve"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/inspiratron",
+      "sprite": "thaumichorizons:models/inspiratron"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "thaumichorizons:models/soulforge",
+      "sprite": "thaumichorizons:models/soulforge"
+    }
+  ]
+}

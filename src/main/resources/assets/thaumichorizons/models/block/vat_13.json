@@ -1,0 +1,8 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "thaumichorizons:blocks/vatbasesidecenter"
+  },
+  "elements": [],
+  "render_type": "minecraft:translucent"
+}

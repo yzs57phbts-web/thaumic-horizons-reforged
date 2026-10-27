@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "type":"minecraft:unstitch",
+      "resource":"thaumichorizons:misc/potions",
+      "divisor_x":256,
+      "divisor_y":256,
+      "regions":[
+        {"sprite":"thaumichorizons:shock","x":0,"y":198,"width":18,"height":18},
+        {"sprite":"thaumichorizons:synthesis","x":18,"y":198,"width":18,"height":18},
+        {"sprite":"thaumichorizons:vacuum","x":36,"y":198,"width":18,"height":18},
+        {"sprite":"thaumichorizons:vis_regen","x":54,"y":198,"width":18,"height":18},
+        {"sprite":"thaumichorizons:vis_boost","x":72,"y":198,"width":18,"height":18}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumichorizons:items/cow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 0
+      },
+      "model": "thaumichorizons:item/creature_icon_0"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 1
+      },
+      "model": "thaumichorizons:item/creature_icon_1"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 2
+      },
+      "model": "thaumichorizons:item/creature_icon_2"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 3
+      },
+      "model": "thaumichorizons:item/creature_icon_3"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 4
+      },
+      "model": "thaumichorizons:item/creature_icon_4"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 5
+      },
+      "model": "thaumichorizons:item/creature_icon_5"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 6
+      },
+      "model": "thaumichorizons:item/creature_icon_6"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 8
+      },
+      "model": "thaumichorizons:item/creature_icon_8"
+    },
+    {
+      "predicate": {
+        "thaumichorizons:dummy_type": 15
+      },
+      "model": "thaumichorizons:item/creature_icon_15"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "thaumichorizons:items/legacy_spawn_egg",
+    "layer1": "thaumichorizons:items/legacy_spawn_egg_overlay"
+  }
+}

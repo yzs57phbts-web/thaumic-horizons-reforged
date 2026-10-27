@@ -1,0 +1,67 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version=mod_version
+group='thaumichorizons'
+base { archivesName='thaumic-horizons-reforged' }
+java.toolchain.languageVersion=JavaLanguageVersion.of(21)
+java.withSourcesJar()
+repositories { maven { url='https://maven.theillusivec4.top/' }; maven { url='https://maven.minecraftforge.net/' } }
+def dependencyMods=file(providers.gradleProperty('modsDir').orElse('libs').get())
+def coreName='thaumcraft-4-reforged-1.1-bbtt.30-filter.1-1.21.1.jar'
+def coreFile=providers.gradleProperty('coreJar').map { file(it) }.getOrElse(new File(dependencyMods,coreName))
+neoForge {
+    accessTransformers.from('src/main/resources/META-INF/accesstransformer.cfg')
+    version='21.1.264'
+    parchment { minecraftVersion='1.21.1'; mappingsVersion='2024.11.17' }
+    runs {
+        client {
+            client(); gameDirectory=file('run/client'); systemProperty 'th.clientSmoke', providers.gradleProperty('clientSmoke').orElse('false').get()
+            systemProperty 'th.vehicleSmokeOnly',providers.gradleProperty('vehicleSmokeOnly').orElse('false').get()
+            systemProperty 'th.cloudSmokeOnly',providers.gradleProperty('cloudSmokeOnly').orElse('false').get()
+            systemProperty 'th.riftSmokeOnly',providers.gradleProperty('riftSmokeOnly').orElse('false').get()
+            systemProperty 'th.boatInjectorSmoke',providers.gradleProperty('boatInjectorSmoke').orElse('false').get()
+            systemProperty 'th.boatVisualSmoke',providers.gradleProperty('boatVisualSmoke').orElse('false').get()
+            if(providers.gradleProperty('clientSmoke').orElse('false').get()=='true'){
+                programArgument '--quickPlaySingleplayer'; programArgument 'th-validation';programArgument '--width';programArgument '1280';programArgument '--height';programArgument '800'
+            }
+        }
+        server { server(); gameDirectory=file('run/server'); programArgument '--nogui' }
+        gameTestServer {
+            type='gameTestServer'; gameDirectory=file('run/gametest')
+            programArgument '--world'; programArgument file('build/gametestworld').absolutePath
+            systemProperty 'neoforge.enabledGameTestNamespaces','thaumichorizons'
+            systemProperty 'th.pocketGameTest','true'
+            systemProperty 'th.auditFile',file('audit/runtime-registry.json').absolutePath
+        }
+        configureEach { logLevel=org.slf4j.event.Level.INFO }
+    }
+    mods { thaumichorizons { sourceSet(sourceSets.main) } }
+}
+dependencies {
+    implementation files(coreFile)
+    implementation files("${dependencyMods}/TerraBlender-neoforge-1.21.1-4.1.0.8.jar")
+    implementation files("${dependencyMods}/curios-neoforge-9.5.1+1.21.1.jar")
+    if(providers.gradleProperty('fullPack').orElse('false').get()=='true'){
+        runtimeOnly files("${dependencyMods}/tainted-magic-reforged-8.2.0-port.5-1.21.1.jar")
+        runtimeOnly files("${dependencyMods}/thaumic-tinkerer-reforged-1.1-bbtt.2-1.21.1.jar")
+        runtimeOnly files("${dependencyMods}/thaumic-exploration-reforged-1.1.53-port.7-1.21.1.jar")
+    }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding='UTF-8' }
+processResources {
+    inputs.property('version',mod_version)
+    filesMatching('META-INF/neoforge.mods.toml') { expand(version:mod_version) }
+    from(files('PORTING-STATUS.md','UPSTREAM.txt')) { into 'META-INF' }
+}
+tasks.named('jar',Jar) { archiveFileName="thaumic-horizons-reforged-${mod_version}-1.21.1.jar" }
+tasks.named('runGameTestServer') {
+    doFirst { file('run/gametest/logs/latest.log').delete() }
+    doLast {
+        def log=file('run/gametest/logs/latest.log')
+        if(!log.isFile() || !(log.text =~ /All [1-9][0-9]* required tests passed/) || (log.text =~ /[1-9][0-9]* required tests failed/)) throw new GradleException('GameTests did not pass')
+    }
+}
+
+apply from: 'gradle/isolated-gametests.gradle'
