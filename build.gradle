@@ -9,7 +9,7 @@ java.toolchain.languageVersion=JavaLanguageVersion.of(21)
 java.withSourcesJar()
 repositories { maven { url='https://maven.theillusivec4.top/' }; maven { url='https://maven.minecraftforge.net/' } }
 def dependencyMods=file(providers.gradleProperty('modsDir').orElse('libs').get())
-def coreName='thaumcraft-4-reforged-1.1-bbtt.30-filter.1-1.21.1.jar'
+def coreName='thaumcraft-4-reforged-1.0.1.jar'
 def coreFile=providers.gradleProperty('coreJar').map { file(it) }.getOrElse(new File(dependencyMods,coreName))
 neoForge {
     accessTransformers.from('src/main/resources/META-INF/accesstransformer.cfg')
