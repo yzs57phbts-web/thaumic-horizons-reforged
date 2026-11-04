@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "key": "TH:recipeFocusIllumination",
+  "kind": "CRUCIBLE",
+  "research": "focusIllumination",
+  "owner": "thaumichorizons",
+  "shapeless": false,
+  "instability": 0,
+  "output": {
+    "item": "thaumichorizons:focus_illumination",
+    "count": 1,
+    "data": {
+      "th_light_color": "11"
+    }
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "minecraft:sea_lantern",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [],
+  "aspects": {
+    "lux": 12,
+    "potentia": 8,
+    "ignis": 8
+  }
+}

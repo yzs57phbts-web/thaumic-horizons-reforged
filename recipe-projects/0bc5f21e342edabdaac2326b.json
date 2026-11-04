@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "key": "TH:recipeSoulSieve",
+  "kind": "INFUSION",
+  "research": "soulExtractor",
+  "owner": "thaumichorizons",
+  "shapeless": false,
+  "instability": 4,
+  "output": {
+    "item": "thaumichorizons:soul_sieve",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "minecraft:hopper",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:amber",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:enchanted_fabric",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:piston",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:brush",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:enchanted_fabric",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:piston",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "spiritus": 16,
+    "machina": 8,
+    "permutatio": 8
+  }
+}

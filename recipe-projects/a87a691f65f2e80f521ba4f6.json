@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "key": "TH:recipeLensAir",
+  "kind": "INFUSION",
+  "research": "lensAir",
+  "owner": "thaumichorizons",
+  "shapeless": false,
+  "instability": 1,
+  "output": {
+    "item": "thaumichorizons:lens_air",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "minecraft:glass_pane",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:bone",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:air_shard",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:spectral_arrow",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:egg",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:spectral_arrow",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:air_shard",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "sensus": 18,
+    "auram": 4,
+    "victus": 12,
+    "exanimis": 12
+  }
+}

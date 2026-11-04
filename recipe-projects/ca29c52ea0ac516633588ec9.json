@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "key": "TH:recipeAmuletMirror",
+  "kind": "INFUSION",
+  "research": "mirrorAmulet",
+  "owner": "thaumichorizons",
+  "shapeless": false,
+  "instability": 6,
+  "output": {
+    "item": "thaumichorizons:mirror_amulet",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "thaumcraft:primordial_pearl",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:mundane_amulet",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:recovery_compass",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:magic_mirror",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "mortuus": 16,
+    "perditio": 32,
+    "vacuos": 32
+  }
+}

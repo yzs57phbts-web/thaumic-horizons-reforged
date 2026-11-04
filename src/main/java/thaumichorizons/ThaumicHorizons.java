@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.NeoForge;
 public final class ThaumicHorizons {
     public static final String ID="thaumichorizons";
     public ThaumicHorizons(IEventBus bus,net.neoforged.fml.ModContainer container){
+        bus.addListener((net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent event) -> event.enqueueWork(EditedRecipes::register));
         container.registerConfig(net.neoforged.fml.config.ModConfig.Type.COMMON,HorizonsConfig.SPEC);
         PocketDimension.init(bus);
         Content.init(bus);

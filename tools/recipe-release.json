@@ -1,0 +1,19 @@
+{
+  "owner": "thaumichorizons",
+  "version": "1.0.5",
+  "previous_sha256": "f3fad9861fc20a06c61140c731eff3c8990fca3ebef43c60ae509f57cdb1eb52",
+  "sha256": "ab1efc0d7e144c93c8c2bae5360268defb08d7b84555db6f1baee4c27c307752",
+  "changed_entries": [
+    "thaumichorizons/ThaumicHorizons.class",
+    "META-INF/neoforge.mods.toml"
+  ],
+  "added_entries": [
+    "thaumichorizons/EditedRecipes.class"
+  ],
+  "preserved_entries": 1114,
+  "artifact": "thaumic-horizons-reforged-1.0.5-1.21.1.jar",
+  "sources": [
+    "src/main/java/thaumichorizons/EditedRecipes.java",
+    "src/main/java/thaumichorizons/ThaumicHorizons.java"
+  ]
+}

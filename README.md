@@ -2,17 +2,17 @@
 
 Неофициальный перенос Thaumic Horizons для Minecraft 1.21.1 / NeoForge. Алхимия, медицина, души, чаны, големы и карманные миры работают через расширения нашего Thaumcraft 4: Reforged.
 
-Текущий выпуск: **1.0.4**.
+Текущий выпуск: **1.0.5**.
 
 ## Для запуска
 
 Нужны **Minecraft 1.21.1**, **Java 21** и **NeoForge 21.1**; общая сборка проверена на **21.1.264**.
 
-- [Наш Thaumcraft 4: Reforged1.0.1](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.1).
+- [Наш Thaumcraft 4: Reforged1.0.3](https://github.com/yzs57phbts-web/thaumcraft-4-reforged-dop/releases/tag/1.0.3).
 - [Curios API 9.5.1](https://www.curseforge.com/minecraft/mc-mods/curios/files/6529130) и [TerraBlender 4.1.0.1+ для NeoForge](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/6054947) — зависимости ядра T4. Для совместных проверок использовался TerraBlender 4.1.0.8.
 - Другие аддоны T4 не обязательны для базового запуска. Для дополнительных интеграций используются совместимые версии из той же сборки.
 
-Скачайте JAR из [релиза 1.0.4](https://github.com/yzs57phbts-web/thaumic-horizons-reforged/releases/tag/1.21.1-v1.0.4) и положите в `mods` вместе с зависимостями. В папке должна быть одна версия каждого мода.
+Скачайте JAR из [релиза 1.0.4](https://github.com/yzs57phbts-web/thaumic-horizons-reforged/releases/tag/1.21.1-v1.0.5) и положите в `mods` вместе с зависимостями. В папке должна быть одна версия каждого мода.
 
 Ниже перечислены **отличия относительно исходника**: Thaumic Horizons для Minecraft 1.7.10 из сохранённого эталона проекта. Исходные предметы и механики сами по себе не считаются добавлениями этой версии.
 
@@ -65,3 +65,8 @@
 ## Условия использования
 
 LGPL-3.0-or-later. Сохранены [LICENSE.txt](LICENSE.txt), уведомления авторов и [UPSTREAM.txt](UPSTREAM.txt). Материалы Minecraft сохраняют отдельное авторство, указанное в UPSTREAM.txt.
+
+
+## Рецепты 1.0.5
+
+Добавлены 6 сохранённых рецептов редактора: `TH:recipeSoulSieve`, `TH:recipeFocusIllumination`, `TH:recipeSoulBeacon`, `TH:recipeLensAir`, `TH:recipeAmuletMirror`, `TH:alternateGolemBell`. Состав, аспекты, количество и данные предметов сохранены в `recipe-projects`. Рецепты применяются после родной регистрации; межмодовые варианты включаются при наличии указанных в них аддонов.

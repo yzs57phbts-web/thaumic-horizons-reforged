@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "key": "TH:recipeSoulBeacon",
+  "kind": "INFUSION",
+  "research": "cloneSelf",
+  "owner": "thaumichorizons",
+  "shapeless": false,
+  "instability": 8,
+  "output": {
+    "item": "thaumichorizons:soul_beacon",
+    "count": 1,
+    "data": {}
+  },
+  "central": {
+    "type": "stack",
+    "stack": {
+      "item": "thaumcraft:primordial_pearl",
+      "count": 1,
+      "data": {}
+    }
+  },
+  "inputs": [
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:warded_jar",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:void_metal_ingot",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:ender_eye",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:beacon",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:respawn_anchor",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "minecraft:ender_eye",
+        "count": 1,
+        "data": {}
+      }
+    },
+    {
+      "type": "stack",
+      "stack": {
+        "item": "thaumcraft:void_metal_ingot",
+        "count": 1,
+        "data": {}
+      }
+    }
+  ],
+  "aspects": {
+    "spiritus": 16,
+    "vinculum": 32,
+    "iter": 32,
+    "mortuus": 32
+  }
+}
